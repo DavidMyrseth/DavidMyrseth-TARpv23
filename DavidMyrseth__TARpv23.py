@@ -83,6 +83,12 @@ print("Kui eesnimi on Juku siis lähme kinno")
 hilimine=input("Kas teile nimi on Juku?")  
 if hilimine.lower()=="juku":
     print("Me lähme kinno")
+
+
+from random import *
+#1 Juku läheb kinno
+age=randint(-100,500) #<6 6-14 15-65 >65 <0 ja >100
+print(age, "age on tulemust")
 if age<0 or age>100:
     tulemus="valed andmed"
 elif 0<age<6:
