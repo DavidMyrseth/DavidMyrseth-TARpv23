@@ -79,28 +79,137 @@
 
 
 #1)
-print("Kui eesnimi on Juku siis lähme kinno")
-hilimine=input("Kas teile nimi on Juku?")  
-if hilimine.lower()=="juku":
-    print("Me lähme kinno")
-
-
-from random import *
+#print("Kui eesnimi on Juku siis lähme kinno")
+#hilimine=input("Kas teile nimi on Juku?")  
+#if hilimine.lower()=="juku":
+#    print("Me lähme kinno")
+#from random import *
 #1 Juku läheb kinno
-age=randint(-100,500) #<6 6-14 15-65 >65 <0 ja >100
-print(age, "age on tulemust")
-if age<0 or age>100:
-    tulemus="valed andmed"
-elif 0<age<6:
-    tulemus="tasuta pilet"
-elif 7<age<15:
-    tulemus="laste pilet"
-elif 15<=age<65:
-    tulemus="täispilet"
-elif 65<=age<100:
-    tulemus="sooduspilet"
-print(tulemus)
-print()
+#age=randint(-100,500) #<6 6-14 15-65 >65 <0 ja >100
+#print(age, "age on tulemust")
+#if age<0 or age>100:
+
+#elif 0<age<6:
+#    tulemus="tasuta pilet"
+#elif 7<age<15:
+#    tulemus="laste pilet"
+#elif 15<=age<65:
+#    tulemus="täispilet"
+#elif 65<=age<100:
+#    tulemus="sooduspilet"
+#print(tulemus)
+#print()
+
+#print("Tere minu naabrid!")
+#str(input("Naaber 1 mis sinu nimi on?"))
+#str(input("Naaber 2 mis sinu nimi on?"))
+
+#print("")
+#str(input("Mis on ristkülikukujulise ruumi seinte mõõtmed?"))
+#x=a*b
+
+from datetime import *
+from random import *
+#14
+maht=int(input("Bussi maht: "))
+i=int(input("Inimesi arv: "))
+ba=round(i/maht) #2;3->2
+ba=1/maht
+if i%maht==0:
+    ba+=1
+vb=i%maht
+print("Kokku on vaja (0) bussi ja viimasel sõidavadm (1) inimest".format(ba,vb))
+
+
+
+
+
+
+
+
+
+
+
+
+#11
+#ta=date.today().year
+#sp=date(int(input("Sünniaasta: ")),int(input("Sünnikuu: ")),int(input("Sünnipäev: "))).year
+#if (ta-sp)%5==0:
+#    print("Juubell")
+#else:
+#    print("Tavaline sünnipäev")
+
+
+#8.2
+#from datetime import *
+#from random import *
+
+#arve_nr= date.today()#datetime.now()
+#print(arve_nr)
+#tsekk="Arve: "+str(arve_nr)+"\nToode Hind Kogus Summa\n"
+#summa=0
+#for toode in ["Piim","Leib","Komm"]:
+#    hind=randint(50,150)/100
+#    v=input("Toode:"+toode+" Hind:"+str(hind)+"\nKas tahad osta?").lower()
+#    if v=="jah":
+#      mitu=int(input("Mitu?"))
+#      tsekk+=toode+" "+str(hind)+" "+str(mitu)+" "+str(mitu+hind)+"\n"
+#      summa+=mitu+hind
+#tsekk+="Kokku maksta: "+str(summa)
+#print(tsekk)
+#while True:
+#    raha=float(input("Maksa "+str(summa)))
+#    if raha==summa:
+#        print("Tänan ostu eest!")
+#        break
+#    elif raha>summa:
+#        print("Tänan ostu eest! Tagasi "+str(raha-summa))
+#        break
+#    else:
+#        summa-=raha
+#        print("Maksa veel"+str(summa))
+
+#arve_nr= date.today()
+#print(arve_nr)
+#tsekk="arve: "+str(arve_nr)+"\nToode Hind Kogus Summa\n"
+#summa=0
+
+#for tode in ("piim","leib","kommid"):
+#    hind=randint(50,100)/100
+#    v=input("Toode: "+toode+" Hind: "+str(hind)+"\nKas tahad osta?").lower
+#    if v=="jah":
+#        mitu=int(input("Mitu? "))
+#        tsekk+=toode+" "+str(hind)+" "+str(mitu)+" "+str(mitu*hind)+"\n"
+#        summa+=mitu*hind
+#tsekk+="Kokku maksta: "+str(summa)
+#print(tsekk)
+#raha=float(input("Maksa "+str(summa)))
+#if raha==summa:
+#    print("Tänan ostu eest!")
+#elif raha>summa:
+#    print("Tänan ostu eest! Tagasi "+str(raha-summa))
+#else:
+#    print("Maksa veel "+str(summa-raha))
+
+#8.1
+#arve_nr= date.today()
+#print(arve_nr)
+#tsekk="arve: "+str(arve_nr)+/"nToode Hind Kogus Summa/n"
+#summa=0
+
+#toode=Piim
+
+#print("tsekk")
+#raha=float(input("Maksa "+str(summa)))
+#if raha==summa:
+#    print("Tänan ostu eest!")
+#elif raha>summa:
+#    print("Tänan ostu eest! Tagasi "+str(raha-summa))
+#else:
+#    print("Maksa veel "+str(summa-raha))
+
+
+
 
 #from random import *
 ##1 Juku läheb kinno
