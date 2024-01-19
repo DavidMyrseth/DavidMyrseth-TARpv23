@@ -33,7 +33,7 @@
 
 #2
 A=15
-for i in range(1,14,A):
+for i in range(1,A,1):
     arv=float(input("Sisesta {0} arv".format(i)))
     if arv==int(arv):
        A+=1
