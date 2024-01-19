@@ -108,28 +108,19 @@
 #str(input("Mis on ristkülikukujulise ruumi seinte mõõtmed?"))
 #x=a*b
 
-from datetime import *
-from random import *
+#from datetime import *
+#from random import *
+
+
 #14
-maht=int(input("Bussi maht: "))
-i=int(input("Inimesi arv: "))
-ba=round(i/maht) #2;3->2
-ba=1/maht
-if i%maht==0:
-    ba+=1
-vb=i%maht
-print("Kokku on vaja (0) bussi ja viimasel sõidavadm (1) inimest".format(ba,vb))
-
-
-
-
-
-
-
-
-
-
-
+#maht=int(input("Bussi maht: "))
+#i=int(input("Inimesi arv: "))
+#ba=round(i/maht) #2;3->2
+#ba=1/maht
+#if i%maht==0:
+#    ba+=1
+#vb=i%maht
+#print("Kokku on vaja (0) bussi ja viimasel sõidavadm (1) inimest".format(ba,vb))
 
 #11
 #ta=date.today().year
