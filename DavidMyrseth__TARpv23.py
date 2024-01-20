@@ -79,11 +79,20 @@
 
 
 #1)
+<<<<<<< HEAD
 #print("Kui eesnimi on Juku siis lähme kinno")
 #hilimine=input("Kas teile nimi on Juku?")  
 #if hilimine.lower()=="juku":
 #    print("Me lähme kinno")
 #from random import *
+=======
+print("Kui eesnimi on Juku siis lähme kinno")
+hilimine=input("Kas teile nimi on Juku?")  
+if hilimine.lower()=="juku":
+    print("Me lähme kinno")
+from random import *
+from string import printable
+>>>>>>> ffb5ff7 (-brain 5)
 #1 Juku läheb kinno
 #age=randint(-100,500) #<6 6-14 15-65 >65 <0 ja >100
 #print(age, "age on tulemust")
@@ -198,6 +207,155 @@
 #    print("Tänan ostu eest! Tagasi "+str(raha-summa))
 #else:
 #    print("Maksa veel "+str(summa-raha))
+
+
+
+
+#2)
+print("Tere naabrid!")
+Name1=input("Mis on esimine naabri nimi?\n")
+Name2=input("Mis on teine naabri nimi?\n")
+print(str(Name1)+" ja "+str(Name2) +" on minu naabrid\n")
+
+#3)
+print("Tere!")
+wall1=int(input("Milline on teie ristkülikukujulise toa seinte pikkus?\n"))
+wall2=int(input("Milline on teie teine ristkülikukujulise toa seinte pikkus?\n"))
+S=wall1*wall2
+Agree=input("Kas sa tahad remonti teha?\n")
+if Agree.lower()=="jah":
+    Hind=int(input("Mis on 1 ruutmeetri hind?\n"))
+    Hind2=S*Hind
+    print("See remont maksab "+str(Hind2)+" eurot\n")
+    
+#4)
+print("Tere!")
+Esiminehind=float(input("Kirjutage toote esimene hind\n"))
+Teinehind=Esiminehind*0.3
+Esiminehind=Esiminehind-Teinehind
+print(Esiminehind)
+
+#5)
+print("Tere päevast")
+agree=input("Temperatuur on üle 18 kraadi või mitte?\n")
+if agree.lower()=="jah":
+    print("See on väga tore\n")
+else:
+    print("See on väga paha\n")
+
+#6)
+print("Tere!")
+Pikkus=int(input("Kui pikk sa oled?\n"))
+if Pikkus<165:
+    print("Sa oled madal\n")
+elif Pikkus<175:
+    print("Sa oled keskmine\n")
+else:
+    print("Sa oled pikk\n")
+    
+#7)
+print("Tere!")
+Sugu=input("Milline on teie sugu?\n")
+if Sugu.lower()=="mees":
+    print("Tere mees")
+elif Sugu.lower()=="naise":
+    print("Head aega")
+Pikkus=int(input("Kui pikk sa oled?\n"))
+if Pikkus<165:
+    print("Sa oled madal "+Sugu)
+elif Pikkus<175:
+    print("Sa oled keskmine "+Sugu)
+else:
+    print("Sa oled pikk "+Sugu)
+    
+#8)
+print("Tere!")
+Piim=randint(2,50)
+Leib=randint(3,75)
+Juust=randint(4,100)
+print("Piim maksab "+ str(Piim)+" eurot") 
+print("Leib maksab "+ str(Leib)+" eurot")
+print("Juust maksab "+ str(Juust)+" eurot")
+Agree=input("Kas sa tahad piima,leiba ja jne osta?\n")
+if Agree.lower()=="jah":
+    print("Lähme poodi")
+    Piim2=int(input("Mitu piima tükki sa osta?\n"))
+    Leib2=int(input("Mitu leiba tükki sa osta?\n"))
+    Juust2=int(input("Mitu juustu tükki sa osta?\n"))
+    print("Hind on "+str(Piim*Piim2 +Leib*Leib2+ Juust*Juust2)+" eurot")
+    
+#9)
+print("Tere!")
+pool1=int(input("Esimine pool\n"))
+pool2=int(input("Teine pool\n"))
+pool3=int(input("Kolmas pool\n"))
+pool4=int(input("Neljas pool\n"))
+if pool1==pool2==pool3==pool4:
+    print("See on ruut")
+
+#10)
+print("Tere!")
+Number1=int(input("esimene number\n"))
+Number2=int(input("teine number\n"))
+Agree=input("Mida sa tahad teha +-*/?\n")
+if Agree=="+":
+    print(Number1+Number2)
+elif Agree=="-":
+    print(Number1-Number2)
+elif Agree=="*":
+    print(Number1*Number2)
+elif Agree=="/":
+    print(Number1/Number2)
+else:
+    pass
+
+#11)
+print("Tere!")
+day1=int(input("Mis päev täna on?\n"))
+month1=input("Mis kuu täna on?\n")
+year1=int(input("Mis aasta täna on?\n"))
+day2=int(input("Mis on teie sünnipäevade päev?\n"))
+month2=input("Mis on teie sünnipäevade kuu?\n")
+year2=int(input("Mis on teie sünnipäevade aasta?\n"))
+if (year1-year2)%5==0:
+    print("Head juubelit!")
+if day1==day2 and month1==month2:
+    print("Palju õnne sünnipäevaks!")
+
+#12) 
+print("Tere!")
+hind=int(input("Sisesta toote hind:\n"))
+if hind<=10:
+    print("Toote hind soodustusega: "+str(hind-hind*0.1)+"eurot")
+elif hind>10:
+    print("Toote hind soodustusega: "+str(hind-hind*0.2)+"eurot")
+    
+#13)
+print("Tere!")
+sugu=input("Milline on teie sugu?\n")
+if sugu.lower()=="mees":
+    aastat=int(input("Kui vana sa oled?"))
+    if aastat>16 and aastat<18:
+        print("Sa läbisid!")
+    else:
+        print("Sa ei läbinud!")
+else:
+    print("Sa ei läbinud!")
+    
+#14)
+maht=int(input("Bussi maht: "))
+i=int(input("Inimesi arv: "))
+ba=round(i/maht) #2;3->2
+ba=1/maht
+if i%maht==0:
+    ba+=1
+vb=i%maht
+print("Kokku on vaja (0) bussi ja viimasel sõidavadm (1) inimest".format(ba,vb))
+
+
+
+
+
 
 
 
