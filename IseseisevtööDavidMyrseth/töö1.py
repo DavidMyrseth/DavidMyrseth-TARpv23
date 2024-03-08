@@ -1,4 +1,5 @@
 from random import *
+import smtplib
 from string import *
 
 def registreeri_kasutaja(kasutajad, paroolid):
@@ -17,6 +18,7 @@ def registreeri_kasutaja(kasutajad, paroolid):
     else:
         print("Vigane valik.")
         return False
+    
     kasutajad.append(nimi)
     paroolid.append(parool)
     print("Kasutaja registreeritud.")
@@ -29,10 +31,12 @@ def autoriseeri_kasutaja(kasutajad, paroolid):
     if nimi not in kasutajad:
         print("Sellist kasutajat ei ole.")
         return False
+    
     parool = input("Sisesta parool: ")
     if parool != paroolid[kasutajad.index(nimi)]:
         print("Vale parool.")
         return False
+    
     print("Autoriseeritud!")
     return True
 
@@ -43,10 +47,12 @@ def muuda_kasutajanimi(kasutajad):
     if vana_nimi not in kasutajad:
         print("Sellist kasutajat ei ole.")
         return False
+    
     uus_nimi = input("Sisesta uus kasutajanimi: ")
     if uus_nimi in kasutajad:
         print("Uus kasutajanimi on juba võetud.")
         return False
+    
     indeks = kasutajad.index(vana_nimi)
     kasutajad[indeks] = uus_nimi
     print("Kasutajanimi edukalt muudetud.")
