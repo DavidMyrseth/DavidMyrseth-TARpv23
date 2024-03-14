@@ -4,7 +4,7 @@ for i in range(0,50,1):
 
     smtp_server = "smtp.gmail.com"
     port = 587
-    to_email = "erik.gerega@gmail.com"
+    to_email = "marina.oleinik@tthk.ee"
     sender_email = "david.mirsetSSS@gmail.com"
     password = "bcbj cata mbch ayzy"
 
